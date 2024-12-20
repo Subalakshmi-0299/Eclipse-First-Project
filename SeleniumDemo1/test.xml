@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="testSuite" verbose="2" parallel="methods" thread-count="2">
+	<!--<listeners>
+		<listener class-name="edureka.ListenersExample"></listener>
+	</listeners>-->
+	<!--<test name="testName">
+		<parameter name="param" value="Suba Param value"></parameter>
+		<groups>
+			<run>
+				<include name="Oppo"></include>
+			</run>
+		</groups>
+		<classes>
+			  
+			  <class name="edureka.ParallelTesting"></class>
+			  <class name="edureka.SeleniumScript"></class>
+			<class name="edureka.DependsOnGroup"></class>
+			<class name="edureka.Google"></class>
+			<class name="edureka.WithoutFindElement"></class>
+		</classes>
+	</test>
+	-->
+	<test name="Login">
+		<classes>
+			<class name="dataDrivenExamples.Login"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="ParamTest">
+		<parameter name="param" value="param value"></parameter>
+		<classes>
+			<class name="edureka.ParametersFile"></class>
+		</classes>
+	</test>
+</suite> 
